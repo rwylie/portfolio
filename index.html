@@ -8,16 +8,19 @@
         <title>Ronda Wylie</title>
 
           <!-- CSS  -->
+            <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
-        <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="css/styles.css" type="text/css" rel="stylesheet" media="screen,projection"/>
         <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 
       </head>
       <body>
+        <script>document.body.className += ' fade-out';</script>
+
         <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
-    <a class="navbar-item" href="https://bulma.io">
-      <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+    <a class="navbar-item" href="./index.html">
+      <img id="logo" src="images/wylie.png" height="28">
     </a>
 
     <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -29,16 +32,15 @@
 
   <div id="navbarBasicExample" class="navbar-menu">
     <div class="navbar-start">
-      <a class="navbar-item">
+      <a href="./design.html"class="navbar-item">
         Design Portfolio
       </a>
 
-      <a class="navbar-item">
+      <a href="./front_end.html" class="navbar-item">
         Front-End Projects
       </a>
 
-      <a class="navbar-item">
-
+      <a href="./about.html" class="navbar-item">
           About
         </a>
 
@@ -47,7 +49,7 @@
     <div class="navbar-end">
       <div class="navbar-item">
         <div class="buttons">
-          <a class="button is-primary">
+          <a href="resume.pdf" download class="button is-primary" target="blank">
             <strong>Resume</strong>
           </a>
           <a href="https://www.linkedin.com/in/rondawylie/" class="button is-primary" target="blank">
@@ -61,55 +63,83 @@
 
 
 
-      <section class="section">
+      <section class="section" data-aos="fade-down" data-aos-duration="2000">
         <div class="container">
 
-          <h1 class="title">
+          <h1 class="title wow has-text-primary">
             Ronda Wylie
           </h1>
           <p class="subtitle">
             Hi, I am Ronda. I am a Front-End Developer and UX Designer.
-            I create beautiful web pages and web apps. Have a look at my latest
-            projects <a>here </a>.  Thanks for stopping by.
+            I create beautiful web pages and web apps. Have a look at my featured
+            projects.  Thanks for stopping by.
           </p>
 
     </div>
       </section>
 
-  <section class="section">
+  <section id="projects"class="section" data-aos="fade-up" data-aos-duration="2000">
+    <h1 id="featured" class="title has-text-centered">
+      Featured Projects
+    </h1>
     <div class="container">
       <div class="columns is-3">
 
-      <div class="column is-one-fifth">
-      <div class="card">
+
+    <div class="column is-one-third">
+      <div class="card upDown">
+        <a href="http://hexiefox.rondawylie.com/" target="blank">
         <div class="card-image">
           <figure class="image is-4by3">
-            <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+            <img src="images/fox.png" alt="Placeholder image">
           </figure>
         </div>
+      </a>
         <div class="card-content">
           <div class="media">
             <div class="media-content">
-              <p class="title is-4">John Smith</p>
-              <p class="subtitle is-6">@johnsmith</p>
+              <p class="title is-4">HEXIFOX <br> hexadicmal game</p>
+              <p class="subtitle is-6">HTML, CSS, JavaScript, and Materialize</p>
             </div>
           </div>
         </div>
-        </div>
       </div>
+    </div>
 
-    <div class="column is-one-fifth">
-      <div class="card">
+    <div class="column is-one-third">
+      <div class="card upDown">
+        <a href="http://birthrighthumble.com/" target="blank">
         <div class="card-image">
           <figure class="image is-4by3">
-            <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+            <img src="images/birthright.png" alt="Placeholder image">
           </figure>
         </div>
+      </a>
         <div class="card-content">
           <div class="media">
             <div class="media-content">
-              <p class="title is-4">John Smith</p>
-              <p class="subtitle is-6">@johnsmith</p>
+              <p class="title is-4">Birthright Humble <br> non-profit website</p>
+              <p class="subtitle is-6">HTML, CSS, JavaScript, and Materialize</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="column is-one-third">
+      <div class="card upDown">
+        <a href="http://blackjack.rondawylie.com/" target="blank">
+        <div class="card-image">
+          <figure class="image is-4by3">
+            <img src="images/blackjack.png" alt="Placeholder image">
+          </figure>
+        </div>
+      </a>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-content">
+              <p class="title is-4">Blackjack <br> card game</p>
+              <p class="subtitle is-6">HTML, CSS, JavaScript, and Materialize</p>
             </div>
           </div>
         </div>
@@ -126,5 +156,9 @@
       <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bubbly-bg@1.0.0/dist/bubbly-bg.js"></script>
       <script src="js/main.js"></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
       </body>
     </html>
